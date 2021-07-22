@@ -44,10 +44,9 @@
     </div>
   </header>
   <!--================Header Menu Area =================-->
-
-  {% block content %}
-  {% endblock %}
-
+  
+{% block content %}
+  {% block baner %}
   <!-- Start Blog Post Siddebar -->
   <div class="col-lg-4 sidebar-widgets">
     <div class="widget-wrap">
@@ -61,16 +60,14 @@
         </div>
         <button class="bbtns d-block mt-20 w-100">Subcribe</button>
       </div>
-
-
       <div class="single-sidebar-widget post-category-widget">
         <h4 class="single-sidebar-widget" style="height:200px;">Здесь будет реклама</h4>
       </div>
     </div>
   </div>
   <!-- End Blog Post Siddebar -->
-
-
+  {% endblock %}
+{% endblock %}
   <!--================ Start Footer Area =================-->
   <footer class="footer-area section-padding">
     <div class="container">
@@ -147,8 +144,6 @@
     </div>
   </footer>
   <!--================ End Footer Area =================-->
-
-  {% block footer %} {% endblock %}
   <script src="{% static 'scripts.js' %}"></script>
 </body>
 

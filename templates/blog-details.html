@@ -82,11 +82,10 @@
           {% endfor %}
         </div>
       </div>
+      {% block baner %}{{ block.super }}{% endblock %}
     </div>
   </div>
 </section>
 <!--================ End Blog Post Area =================-->
-
-{% block footer %} {% endblock %}
 
 {% endblock %}
